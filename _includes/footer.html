@@ -1,0 +1,21 @@
+<footer class="site">
+  <div class="wrap">
+    <div class="fbrand">
+      <a class="brand" href="{{ '/' | relative_url }}" style="color:var(--on-night)">
+        {% include mark.html dark=true %}
+        <span class="wm"><b>DOUBLE ALPHA</b><span style="color:var(--on-night-muted)">MANAGEMENT</span></span>
+      </a>
+      <p style="margin-top:14px;max-width:34ch">Independent project management and technical advisory for offshore drilling. Houston, Texas.</p>
+    </div>
+    <div><h4>Services</h4><ul>{% assign svc = site.services | sort: 'order' %}{% for s in svc %}<li><a href="{{ s.url | relative_url }}">{{ s.title }}</a></li>{% endfor %}</ul></div>
+    <div><h4>Experience</h4><ul>{% assign exp = site.experience | sort: 'order' %}{% for e in exp %}<li><a href="{{ e.url | relative_url }}">{{ e.title }}</a></li>{% endfor %}</ul></div>
+    <div><h4>Company</h4><ul>
+      <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+      <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+      <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+      <li><a href="{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="{{ site.substack }}" target="_blank" rel="noopener">Substack</a></li>
+    </ul></div>
+    <p class="legal">© {{ site.time | date: '%Y' }} Double Alpha Management Inc. All rights reserved. · {{ site.email }}</p>
+  </div>
+</footer>

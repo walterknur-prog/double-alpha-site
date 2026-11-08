@@ -1,0 +1,41 @@
+---
+layout: default
+section: home
+title: Double Alpha Management
+---
+<section class="hero"><div class="wrap">
+  <div>
+    <p class="eyebrow">Offshore drilling · Project delivery</p>
+    <h1>Rigs back to work on time and within budget.</h1>
+    <p class="lede">Double Alpha Management is an independent project management and technical advisory firm. We lead rig reactivations, surveys, repairs and upgrades for drilling contractors, owners and operators.</p>
+    <div class="cta"><a class="btn primary" href="{{ '/services/' | relative_url }}">Our services</a><a class="btn ghost" href="{{ '/contact/' | relative_url }}">Contact us</a></div>
+  </div>
+  <span class="motif">{% include mark.html w=300 h=218 dark=true %}</span>
+</div></section>
+<section class="block"><div class="wrap">
+  <div class="sechead"><p class="eyebrow">Services</p><h2>Five services, one goal: a rig that is ready to work.</h2></div>
+  <div class="grid g3">{% assign svc = site.services | sort: 'order' %}{% for s in svc %}<a class="card" href="{{ s.url | relative_url }}"><h3>{{ s.title }}</h3><p>{{ s.summary }}</p><span class="more">Learn more →</span></a>{% endfor %}</div>
+</div></section>
+<section class="block"><div class="wrap">
+  <div class="sechead"><p class="eyebrow">How we work</p><h2>A disciplined, PMBOK-aligned approach</h2></div>
+  <ol class="steps">
+    <li><b>Assess</b><span>Confirm condition, scope, contract requirements and constraints.</span></li>
+    <li><b>Plan</b><span>Set the WBS, AFE budget, schedule, risk register and procurement plan.</span></li>
+    <li><b>Execute</b><span>Control cost, schedule, vendors and quality with weekly reporting.</span></li>
+    <li><b>Deliver</b><span>Commission, pass acceptance testing and hand over a contract-ready rig.</span></li>
+  </ol>
+</div></section>
+<section class="block"><div class="wrap split">
+  <div class="prose">
+    <div class="sechead"><p class="eyebrow">Why Double Alpha</p><h2>Two parties working as one</h2></div>
+    <p>Our name comes from two alphas linked together: client and adviser, owner and operator. We work inside your team, use your systems and report in your format.</p>
+    <p class="muted">We bring hands-on offshore drilling experience across reactivations, shipyard programmes, project controls and vendor management. Every engagement is led by a senior project manager.</p>
+    <p><a href="{{ '/about/' | relative_url }}">About the firm →</a></p>
+  </div>
+  <div class="panel"><h3>What clients get</h3>{% assign wc = "One accountable senior lead|Weekly cost, schedule and risk reporting|Early warning on late materials and vendors|Decisions backed by numbers, not adjectives|Executive-ready reports and presentations" | split: "|" %}{% include ticks.html items=wc %}</div>
+</div></section>
+<section class="block"><div class="wrap">
+  <div class="sechead"><p class="eyebrow">From the blog</p><h2>Latest insights</h2></div>
+  <div class="grid g2">{% for p in site.posts limit:4 %}{% include postcard.html p=p %}{% endfor %}</div>
+</div></section>
+{% include cta.html %}

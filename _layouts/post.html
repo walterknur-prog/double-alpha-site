@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% capture eb %}{{ page.tag }} · {{ page.date | date: '%-d %b %Y' }}{% endcapture %}
+{% include pagehead.html parent="Blog" parent_url="/blog/" eyebrow=eb lede=page.summary %}
+<section class="block"><div class="wrap split">
+  <article class="post-body">
+    {{ content }}
+    {% if page.takeaway %}<div class="panel"><h3>Takeaway</h3><p>{{ page.takeaway }}</p></div>{% endif %}
+    {% if page.substack_url %}<p><a class="btn primary" href="{{ page.substack_url }}" target="_blank" rel="noopener" style="color:#111412">Read the full article on Substack</a></p>{% endif %}
+  </article>
+  <aside class="card sidelist"><span class="tag">More from the blog</span>{% for p in site.posts %}{% if p.url != page.url %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% endif %}{% endfor %}<a href="{{ '/blog/' | relative_url }}">All posts</a><a href="{{ site.substack }}" target="_blank" rel="noopener">Subscribe on Substack</a></aside>
+</div></section>
+{% include cta.html %}

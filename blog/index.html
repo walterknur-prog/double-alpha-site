@@ -1,0 +1,10 @@
+---
+layout: default
+section: blog
+title: Blog
+description: Market analysis and project lessons on offshore rigs from Walter Knur.
+---
+{% include pagehead.html eyebrow="Blog" title="Insights on offshore rigs, markets and project delivery" crumb="Blog" lede="Market analysis and project lessons from Walter Knur. Full articles are also published on Substack." %}
+<section class="block"><div class="wrap"><div class="grid g2">{% for p in site.posts %}{% include postcard.html p=p %}{% endfor %}</div>
+<p style="margin-top:24px"><a href="{{ site.substack }}" target="_blank" rel="noopener">Subscribe on Substack →</a> · <a href="{{ '/feed.xml' | relative_url }}">RSS feed</a></p></div></section>
+{% include cta.html %}

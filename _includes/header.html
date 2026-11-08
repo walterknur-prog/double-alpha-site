@@ -1,0 +1,20 @@
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Double Alpha Management, home">
+      {% include mark.html %}
+      <span class="wm"><b>DOUBLE ALPHA</b><span>MANAGEMENT</span></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav class="main" id="mainNav" aria-label="Main"><ul>
+      <li><a class="top" href="{{ '/' | relative_url }}"{% if page.section == 'home' %} aria-current="page"{% endif %}>Home</a></li>
+      <li><a class="top" href="{{ '/services/' | relative_url }}"{% if page.section == 'services' %} aria-current="page"{% endif %}>Services</a>
+        <div class="sub">{% assign svc = site.services | sort: 'order' %}{% for s in svc %}<a href="{{ s.url | relative_url }}">{{ s.title }}</a>{% endfor %}</div></li>
+      <li><a class="top" href="{{ '/experience/' | relative_url }}"{% if page.section == 'experience' %} aria-current="page"{% endif %}>Experience</a>
+        <div class="sub">{% assign exp = site.experience | sort: 'order' %}{% for e in exp %}<a href="{{ e.url | relative_url }}">{{ e.title }}</a>{% endfor %}</div></li>
+      <li><a class="top" href="{{ '/blog/' | relative_url }}"{% if page.section == 'blog' %} aria-current="page"{% endif %}>Blog</a>
+        <div class="sub">{% for p in site.posts limit:6 %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% endfor %}<a href="{{ '/blog/' | relative_url }}">All posts</a></div></li>
+      <li><a class="top" href="{{ '/about/' | relative_url }}"{% if page.section == 'about' %} aria-current="page"{% endif %}>About</a></li>
+      <li><a class="top" href="{{ '/contact/' | relative_url }}"{% if page.section == 'contact' %} aria-current="page"{% endif %}>Contact</a></li>
+    </ul></nav>
+  </div>
+</header>

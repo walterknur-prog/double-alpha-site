@@ -1,0 +1,11 @@
+---
+layout: default
+section: services
+title: Services
+description: Project delivery services for offshore drilling assets, from first assessment to sail-out.
+---
+{% include pagehead.html eyebrow="Services" title="Project delivery for offshore drilling assets" crumb="Services" lede="We support drilling contractors, rig owners and operators from first assessment to sail-out." %}
+<section class="block"><div class="wrap"><div class="grid g2">
+{% assign svc = site.services | sort: 'order' %}{% for s in svc %}<a class="card" href="{{ s.url | relative_url }}"><h3>{{ s.title }}</h3><p>{{ s.summary }}</p><ul class="ticks">{% for c in s.covers limit:3 %}<li>{{ c }}</li>{% endfor %}</ul><span class="more">View service →</span></a>{% endfor %}
+</div></div></section>
+{% include cta.html %}

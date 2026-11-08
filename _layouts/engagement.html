@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{% include pagehead.html parent="Experience" parent_url="/experience/" eyebrow=page.tag lede=page.summary %}
+<section class="block"><div class="wrap split">
+  <div class="prose"><div class="sechead"><h2>What we did</h2></div>{% include ticks.html items=page.did %}
+    <div class="sechead" style="margin-top:20px"><h2>Outcome</h2></div><p>{{ page.outcome }}</p>
+    {{ content }}</div>
+  <div class="tablewrap"><table class="facts"><tbody>{% for f in page.facts %}<tr><th scope="row">{{ f[0] }}</th><td>{{ f[1] }}</td></tr>{% endfor %}</tbody></table></div>
+</div></section>
+{% include cta.html %}

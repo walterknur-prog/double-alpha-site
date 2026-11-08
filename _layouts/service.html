@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% include pagehead.html parent="Services" parent_url="/services/" eyebrow="Service" lede=page.lede %}
+<section class="block"><div class="wrap split">
+  <div class="prose"><div class="sechead"><h2>What this covers</h2></div>{% include ticks.html items=page.covers %}
+    <div class="sechead" style="margin-top:20px"><h2>Result</h2></div><p>{{ page.result }}</p>
+    {{ content }}</div>
+  <div class="panel"><h3>Typical deliverables</h3>{% include ticks.html items=page.deliverables %}</div>
+</div></section>
+{% assign svc = site.services | sort: 'order' %}{% assign nxt = nil %}{% for s in svc %}{% if s.url == page.url %}{% assign i = forloop.index0 | plus: 1 %}{% assign n = svc.size %}{% assign j = i | modulo: n %}{% assign nxt = svc[j] %}{% endif %}{% endfor %}
+<section class="block"><div class="wrap"><a class="card" href="{{ nxt.url | relative_url }}" style="max-width:560px"><span class="tag">Next service</span><h3>{{ nxt.title }}</h3><p>{{ nxt.summary }}</p><span class="more">View service →</span></a></div></section>
+{% include cta.html %}

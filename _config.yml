@@ -1,0 +1,29 @@
+title: Double Alpha Management
+description: Independent project management and technical advisory for offshore drilling. Rig reactivation, surveys, upgrades, project controls and vendor management. Houston, Texas.
+url: "https://walterknur-prog.github.io"
+baseurl: "/double-alpha-site"
+email: wk@double-alpha.com
+linkedin: https://www.linkedin.com/in/walterknur
+substack: https://doublealpha.substack.com
+permalink: /blog/:title/
+timezone: America/Chicago
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+collections:
+  services:
+    output: true
+    permalink: /services/:name/
+  experience:
+    output: true
+    permalink: /experience/:name/
+defaults:
+  - scope: {path: "", type: posts}
+    values: {layout: post, section: blog}
+  - scope: {path: "", type: services}
+    values: {layout: service, section: services}
+  - scope: {path: "", type: experience}
+    values: {layout: engagement, section: experience}
+exclude: [README.md, CLAUDE.md]

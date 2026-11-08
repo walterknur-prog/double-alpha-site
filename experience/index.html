@@ -1,0 +1,11 @@
+---
+layout: default
+section: experience
+title: Experience
+description: Selected engagements across surveys, reactivations, newbuilds and capital advisory.
+---
+{% include pagehead.html eyebrow="Experience" title="Selected engagements" crumb="Experience" lede="Representative work across surveys, reactivations, newbuilds and capital advisory. Client names are available on request." %}
+<section class="block"><div class="wrap"><div class="grid g2">
+{% assign exp = site.experience | sort: 'order' %}{% for e in exp %}<a class="card" href="{{ e.url | relative_url }}"><span class="tag">{{ e.tag }}</span><h3>{{ e.title }}</h3><p>{{ e.summary }}</p><span class="more">Read more →</span></a>{% endfor %}
+</div></div></section>
+{% include cta.html %}
