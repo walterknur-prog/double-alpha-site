@@ -1,5 +1,6 @@
 ---
 title: "Surveys, Repairs & Upgrades"
+icon: survey
 order: 2
 summary: "Special Periodic Surveys, shipyard and quayside repairs, and equipment upgrades for jack-ups and floaters."
 lede: "Survey and upgrade work is where out-of-service days are won or lost. We plan the work around the days the rig must be back on hire."

@@ -1,5 +1,6 @@
 ---
 title: "Project Controls & Reporting"
+icon: controls
 order: 3
 summary: "WBS and AFE structure, budgets, schedules, earned value and management reporting."
 lede: "Management needs one clear answer: are we on budget and on schedule? We set up the controls that give that answer every week."

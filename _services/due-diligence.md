@@ -1,5 +1,6 @@
 ---
 title: "Technical Due Diligence & Advisory"
+icon: diligence
 order: 5
 summary: "Rig condition reviews, business cases and independent advice for owners, operators and investors."
 lede: "Owners and investors need an independent view before they commit capital. We give a clear, evidence-based answer."

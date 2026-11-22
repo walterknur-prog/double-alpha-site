@@ -1,5 +1,6 @@
 ---
 title: "Rig Reactivation & Sail-Out"
+icon: rig
 order: 1
 summary: "Bring stacked or cold rigs back to work, from condition review to acceptance and sail-out."
 lede: "A stacked rig carries hidden scope. We size it early, control it tightly and get the rig to location ready to work."

@@ -3,18 +3,34 @@ layout: default
 section: home
 title: Double Alpha Management
 ---
-<section class="hero"><div class="wrap">
-  <div>
-    <p class="eyebrow">Offshore drilling · Project delivery</p>
-    <h1>Rigs back to work on time and within budget.</h1>
-    <p class="lede">Double Alpha Management is an independent project management and technical advisory firm. We lead rig reactivations, surveys, repairs and upgrades for drilling contractors, owners and operators.</p>
-    <div class="cta"><a class="btn primary" href="{{ '/services/' | relative_url }}">Our services</a><a class="btn ghost" href="{{ '/contact/' | relative_url }}">Contact us</a></div>
+<section class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Offshore drilling · Project delivery</p>
+      <h1>Rigs back to work, <span class="hl">on time and within budget.</span></h1>
+      <p class="lede">Double Alpha Management is an independent project management and technical advisory firm. We lead rig reactivations, surveys, repairs and upgrades for drilling contractors, owners and operators.</p>
+      <div class="cta"><a class="btn primary" href="{{ '/services/' | relative_url }}">Our services</a><a class="btn ghost" href="{{ '/contact/' | relative_url }}">Contact us</a></div>
+    </div>
+    <span class="motif">{% include mark-hero.html %}</span>
   </div>
-  <span class="motif">{% include mark.html w=300 h=218 dark=true %}</span>
-</div></section>
+  <div class="wrap stats">
+    <div class="stat"><b data-count="15" data-suffix="+">15+</b><span>years in offshore drilling projects</span></div>
+    <div class="stat"><b>12–18</b><span>month programmes led from feasibility to handover</span></div>
+    <div class="stat"><b data-count="5">5</b><span>services, from first assessment to sail-out</span></div>
+    <div class="stat"><b data-count="2">2</b><span>working languages: English and German</span></div>
+  </div>
+  <svg class="swell" viewBox="0 0 1200 110" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 44q150-26 300 0t300 0 300 0 300 0 300 0 300 0"/>
+    <path d="M-150 66q150-34 300 0t300 0 300 0 300 0 300 0 300 0 300 0"/>
+    <path d="M-300 88q150-20 300 0t300 0 300 0 300 0 300 0 300 0 300 0"/>
+  </svg>
+</section>
+{% assign caps = "Rig reactivation|Special Periodic Survey|Shipyard repairs|Upgrades|Project controls|AFE governance|Earned value|Schedule risk analysis|Vendor tendering|Expediting|Technical due diligence|Sail-out" | split: "|" %}
+<div class="ticker"><div class="track"><ul>{% for c in caps %}<li>{{ c }}</li>{% endfor %}</ul><ul aria-hidden="true">{% for c in caps %}<li>{{ c }}</li>{% endfor %}</ul></div></div>
 <section class="block"><div class="wrap">
   <div class="sechead"><p class="eyebrow">Services</p><h2>Five services, one goal: a rig that is ready to work.</h2></div>
-  <div class="grid g3">{% assign svc = site.services | sort: 'order' %}{% for s in svc %}<a class="card" href="{{ s.url | relative_url }}"><h3>{{ s.title }}</h3><p>{{ s.summary }}</p><span class="more">Learn more →</span></a>{% endfor %}</div>
+  <div class="bento">{% assign svc = site.services | sort: 'order' %}{% for s in svc %}<a class="card" href="{{ s.url | relative_url }}">{% include svc-icon.html name=s.icon %}<h3>{{ s.title }}</h3><p>{{ s.summary }}</p><span class="more">Learn more →</span></a>{% endfor %}</div>
 </div></section>
 <section class="block"><div class="wrap">
   <div class="sechead"><p class="eyebrow">How we work</p><h2>A disciplined, PMBOK-aligned approach</h2></div>
@@ -25,7 +41,7 @@ title: Double Alpha Management
     <li><b>Deliver</b><span>Commission, pass acceptance testing and hand over a contract-ready rig.</span></li>
   </ol>
 </div></section>
-<section class="block"><div class="wrap split">
+<section class="block night"><div class="wrap split">
   <div class="prose">
     <div class="sechead"><p class="eyebrow">Why Double Alpha</p><h2>Two parties working as one</h2></div>
     <p>Our name comes from two alphas linked together: client and adviser, owner and operator. We work inside your team, use your systems and report in your format.</p>

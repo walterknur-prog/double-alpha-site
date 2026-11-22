@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
 {% feed_meta %}
+<script>if("IntersectionObserver" in window&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("js")</script>
 </head>
 <body>
 {% include mark-symbol.html %}
@@ -18,10 +19,7 @@
 {{ content }}
 </main>
 {% include footer.html %}
-<script>
-document.getElementById("menuBtn").addEventListener("click",function(){var n=document.getElementById("mainNav");var o=n.classList.toggle("open");this.setAttribute("aria-expanded",o)});
-document.addEventListener("click",function(ev){var b=ev.target.closest(".copy");if(!b)return;var t=b.getAttribute("data-copy");function sel(){var v=b.parentElement.querySelector(".val");var r=document.createRange();r.selectNodeContents(v);var s=getSelection();s.removeAllRanges();s.addRange(r)}try{navigator.clipboard.writeText(t).then(function(){b.textContent="Copied";setTimeout(function(){b.textContent="Copy address"},1600)},sel)}catch(e){sel()}});
-</script>
+<script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
 <script data-goatcounter="https://double-alpha.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>

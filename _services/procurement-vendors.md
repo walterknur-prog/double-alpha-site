@@ -1,5 +1,6 @@
 ---
 title: "Procurement & Vendor Management"
+icon: procure
 order: 4
 summary: "Tendering, vendor selection, contract negotiation, expediting and contractor cost control."
 lede: "Most rig project delays start in procurement. We control the purchase order book line by line, from requisition to delivery."
