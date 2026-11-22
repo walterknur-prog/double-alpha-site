@@ -7,7 +7,7 @@ title: Double Alpha Management
   <div class="hero-grid" aria-hidden="true"></div>
   <div class="wrap">
     <div>
-      <p class="eyebrow">Offshore drilling · Project delivery</p>
+      <p class="eyebrow">Offshore drilling · AI-supported project delivery</p>
       <h1>Rigs back to work, <span class="hl">on time and within budget.</span></h1>
       <p class="lede">Double Alpha Management is an independent project management and technical advisory firm. We lead rig reactivations, surveys, repairs and upgrades for drilling contractors, owners and operators.</p>
       <div class="cta"><a class="btn primary" href="{{ '/services/' | relative_url }}">Our services</a><a class="btn ghost" href="{{ '/contact/' | relative_url }}">Contact us</a></div>
@@ -26,20 +26,34 @@ title: Double Alpha Management
     <path d="M-300 88q150-20 300 0t300 0 300 0 300 0 300 0 300 0 300 0"/>
   </svg>
 </section>
-{% assign caps = "Rig reactivation|Special Periodic Survey|Shipyard repairs|Upgrades|Project controls|AFE governance|Earned value|Schedule risk analysis|Vendor tendering|Expediting|Technical due diligence|Sail-out" | split: "|" %}
+{% assign caps = "Rig reactivation|Special Periodic Survey|Shipyard repairs|Upgrades|Project controls|AI-supported reporting|AFE governance|Earned value|Schedule risk analysis|Vendor tendering|Expediting|Technical due diligence|Sail-out" | split: "|" %}
 <div class="ticker"><div class="track"><ul>{% for c in caps %}<li>{{ c }}</li>{% endfor %}</ul><ul aria-hidden="true">{% for c in caps %}<li>{{ c }}</li>{% endfor %}</ul></div></div>
 <section class="block"><div class="wrap">
   <div class="sechead"><p class="eyebrow">Services</p><h2>Five services, one goal: a rig that is ready to work.</h2></div>
   <div class="bento">{% assign svc = site.services | sort: 'order' %}{% for s in svc %}<a class="card" href="{{ s.url | relative_url }}">{% include svc-icon.html name=s.icon %}<h3>{{ s.title }}</h3><p>{{ s.summary }}</p><span class="more">Learn more →</span></a>{% endfor %}</div>
 </div></section>
 <section class="block"><div class="wrap">
-  <div class="sechead"><p class="eyebrow">How we work</p><h2>A disciplined, PMBOK-aligned approach</h2></div>
+  <div class="sechead"><p class="eyebrow">How we work</p><h2>A disciplined, PMBOK-aligned approach, now driven by AI</h2></div>
   <ol class="steps">
     <li><b>Assess</b><span>Confirm condition, scope, contract requirements and constraints.</span></li>
     <li><b>Plan</b><span>Set the WBS, AFE budget, schedule, risk register and procurement plan.</span></li>
     <li><b>Execute</b><span>Control cost, schedule, vendors and quality with weekly reporting.</span></li>
     <li><b>Deliver</b><span>Commission, pass acceptance testing and hand over a contract-ready rig.</span></li>
   </ol>
+</div></section>
+<section class="block"><div class="wrap split">
+  <div class="prose">
+    <div class="sechead"><p class="eyebrow">AI-driven project management</p><h2>AI does the checking. A senior project manager makes the decisions.</h2></div>
+    <p>Our project management approach is now supported and driven by AI. AI tools read the full data set every week: every purchase order line, every cost entry and every schedule activity. Nothing is sampled and nothing waits for month-end.</p>
+    <p class="muted">The method stays the same: PMBOK-aligned controls, AFE governance and clear accountability. AI makes it faster and more complete, so problems surface weeks earlier and reports arrive on time.</p>
+    <p><a href="{{ '/services/project-controls/' | relative_url }}">See project controls →</a></p>
+  </div>
+  <div class="grid ai-grid">
+    <div class="card">{% include svc-icon.html name="diligence" %}<h3>Every PO line, every week</h3><p>AI checks each open purchase order line against the need date and flags late deliveries and freight risk.</p></div>
+    <div class="card">{% include svc-icon.html name="controls" %}<h3>Live budget control</h3><p>Commitments, actuals and estimate to complete are reconciled against each AFE as the data changes.</p></div>
+    <div class="card">{% include svc-icon.html name="risk" %}<h3>Schedule risk in hours</h3><p>Monte Carlo risk analysis on the full schedule gives P50 and P80 dates in hours instead of weeks.</p></div>
+    <div class="card">{% include svc-icon.html name="survey" %}<h3>Reports drafted, then reviewed</h3><p>AI drafts weekly reports, bid comparisons and business cases. A senior project manager reviews every one before it goes out.</p></div>
+  </div>
 </div></section>
 <section class="block night"><div class="wrap split">
   <div class="prose">

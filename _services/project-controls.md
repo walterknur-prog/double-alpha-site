@@ -13,6 +13,7 @@ covers:
   - "Primavera P6 and MS Project scheduling"
   - "Schedule risk analysis (Monte Carlo)"
   - "Contingency and management reserve control"
+  - "AI-supported checks on every cost entry, PO line and schedule activity"
 deliverables:
   - "AFE budget dashboard with PO drill-down"
   - "Monthly management report"

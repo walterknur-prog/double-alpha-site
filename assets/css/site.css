@@ -259,3 +259,8 @@ main section.block.night .wrap,main section.block.night + section.block .wrap{pa
 @keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
 @keyframes swell{to{transform:translateX(-600px)}}
 @keyframes tick{to{transform:translateX(-50%)}}
+
+/* AI section */
+.ai-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.ai-grid .card h3{font-size:17px}
+@media (max-width:560px){.ai-grid{grid-template-columns:1fr}}
