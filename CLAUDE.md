@@ -8,3 +8,4 @@ Jekyll site on GitHub Pages for double-alpha.com. Owner: Walter Knur (wk@double-
 - New Substack posts: add a summary post in `_posts/` with `substack_url`, key points and a takeaway. Do not copy the full article.
 - Always use `relative_url` for links so the site works with or without the custom domain.
 - Design v2 (Nov 2026): night hero and page headers, animated mark, stats strip, capability ticker, bento service cards with icons, scroll reveals (`assets/js/site.js`). All motion must respect `prefers-reduced-motion`; content must stay readable without JavaScript.
+- `space/index.html` ("Double Alpha Space") is a standalone Three.js r0.143 starfield built to Walter's exact spec (colours and settings fixed by him; it deliberately sits outside the brand palette). Do not restyle it without asking.
