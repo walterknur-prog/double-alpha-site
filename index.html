@@ -7,17 +7,17 @@ title: Double Alpha Management
   <div class="hero-grid" aria-hidden="true"></div>
   <div class="wrap">
     <div>
-      <p class="eyebrow">Offshore drilling · AI-supported project delivery</p>
-      <h1>Rigs back to work, <span class="hl">on time and within budget.</span></h1>
-      <p class="lede">Double Alpha Management is an independent project management and technical advisory firm. We lead rig reactivations, surveys, repairs and upgrades for drilling contractors, owners and operators.</p>
+      <p class="eyebrow">Offshore drilling · Project management and technical advisory</p>
+      <h1>Rigs back to work, <span class="hl">on time and inside the AFE.</span></h1>
+      <p class="lede">We lead rig reactivations, surveys, repairs and upgrades for drilling contractors, owners and operators. One senior project manager runs each programme, from first assessment to sail-out.</p>
       <div class="cta"><a class="btn primary" href="{{ '/services/' | relative_url }}">Our services</a><a class="btn ghost" href="{{ '/contact/' | relative_url }}">Contact us</a><a class="btn ghost" href="{{ '/space/' | relative_url }}">Double Alpha Space</a></div>
     </div>
     <span class="motif">{% include mark-hero.html %}</span>
   </div>
   <div class="wrap stats">
-    <div class="stat"><b data-count="15" data-suffix="+">15+</b><span>years in offshore drilling projects</span></div>
-    <div class="stat"><b>12–18</b><span>month programmes led from feasibility to handover</span></div>
-    <div class="stat"><b data-count="5">5</b><span>services, from first assessment to sail-out</span></div>
+    <div class="stat"><b data-count="15" data-suffix="+">15+</b><span>years leading offshore drilling projects</span></div>
+    <div class="stat"><b>12–18</b><span>month programmes, feasibility to handover</span></div>
+    <div class="stat"><b data-count="5">5</b><span>services, first assessment to sail-out</span></div>
     <div class="stat"><b data-count="2">2</b><span>working languages: English and German</span></div>
   </div>
   <svg class="swell" viewBox="0 0 1200 110" preserveAspectRatio="none" aria-hidden="true">
@@ -29,43 +29,43 @@ title: Double Alpha Management
 {% assign caps = "Rig reactivation|Special Periodic Survey|Shipyard repairs|Upgrades|Project controls|AI-supported reporting|AFE governance|Earned value|Schedule risk analysis|Vendor tendering|Expediting|Technical due diligence|Sail-out" | split: "|" %}
 <div class="ticker"><div class="track"><ul>{% for c in caps %}<li>{{ c }}</li>{% endfor %}</ul><ul aria-hidden="true">{% for c in caps %}<li>{{ c }}</li>{% endfor %}</ul></div></div>
 <section class="block"><div class="wrap">
-  <div class="sechead"><p class="eyebrow">Services</p><h2>Five services, one goal: a rig that is ready to work.</h2></div>
+  <div class="sechead"><p class="eyebrow">Services</p><h2>Five services. One result: a rig ready for its contract.</h2></div>
   <div class="bento">{% assign svc = site.services | sort: 'order' %}{% for s in svc %}<a class="card" href="{{ s.url | relative_url }}">{% include svc-icon.html name=s.icon %}<h3>{{ s.title }}</h3><p>{{ s.summary }}</p><span class="more">Learn more →</span></a>{% endfor %}</div>
 </div></section>
 <section class="block"><div class="wrap">
-  <div class="sechead"><p class="eyebrow">How we work</p><h2>A disciplined, PMBOK-aligned approach, now driven by AI</h2></div>
+  <div class="sechead"><p class="eyebrow">How we work</p><h2>Four steps, PMBOK-aligned, checked by AI every week</h2></div>
   <ol class="steps">
-    <li><b>Assess</b><span>Confirm condition, scope, contract requirements and constraints.</span></li>
-    <li><b>Plan</b><span>Set the WBS, AFE budget, schedule, risk register and procurement plan.</span></li>
-    <li><b>Execute</b><span>Control cost, schedule, vendors and quality with weekly reporting.</span></li>
-    <li><b>Deliver</b><span>Commission, pass acceptance testing and hand over a contract-ready rig.</span></li>
+    <li><b>Assess</b><span>Confirm the rig's condition, the scope, the contract terms and the constraints.</span></li>
+    <li><b>Plan</b><span>Set the WBS, AFE budget, schedule, risk register and procurement plan before work starts.</span></li>
+    <li><b>Execute</b><span>Control cost, schedule, vendors and quality. Report every week.</span></li>
+    <li><b>Deliver</b><span>Commission, pass acceptance tests and hand over a rig ready for its contract.</span></li>
   </ol>
 </div></section>
 <section class="block"><div class="wrap split">
   <div class="prose">
     <div class="sechead"><p class="eyebrow">AI-driven project management</p><h2>AI does the checking. A senior project manager makes the decisions.</h2></div>
-    <p>Our project management approach is now supported and driven by AI. AI tools read the full data set every week: every purchase order line, every cost entry and every schedule activity. Nothing is sampled and nothing waits for month-end.</p>
-    <p class="muted">The method stays the same: PMBOK-aligned controls, AFE governance and clear accountability. AI makes it faster and more complete, so problems surface weeks earlier and reports arrive on time.</p>
+    <p>AI reads the full project data every week: every purchase order line, every cost entry, every schedule activity. Nothing is sampled. Nothing waits for month-end.</p>
+    <p class="muted">The method does not change: PMBOK-aligned controls, AFE governance and one accountable lead. AI makes the checking faster and complete, so problems show up weeks earlier.</p>
     <p><a href="{{ '/services/project-controls/' | relative_url }}">See project controls →</a></p>
   </div>
   <div class="grid ai-grid">
-    <div class="card">{% include svc-icon.html name="diligence" %}<h3>Every PO line, every week</h3><p>AI checks each open purchase order line against the need date and flags late deliveries and freight risk.</p></div>
+    <div class="card">{% include svc-icon.html name="diligence" %}<h3>Every PO line, every week</h3><p>Each open PO line is checked against its need date. Late deliveries and freight risk are flagged.</p></div>
     <div class="card">{% include svc-icon.html name="controls" %}<h3>Live budget control</h3><p>Commitments, actuals and estimate to complete are reconciled against each AFE as the data changes.</p></div>
-    <div class="card">{% include svc-icon.html name="risk" %}<h3>Schedule risk in hours</h3><p>Monte Carlo risk analysis on the full schedule gives P50 and P80 dates in hours instead of weeks.</p></div>
-    <div class="card">{% include svc-icon.html name="survey" %}<h3>Reports drafted, then reviewed</h3><p>AI drafts weekly reports, bid comparisons and business cases. A senior project manager reviews every one before it goes out.</p></div>
+    <div class="card">{% include svc-icon.html name="risk" %}<h3>Schedule risk in hours</h3><p>Monte Carlo analysis of the full schedule gives P50 and P80 dates in hours, not weeks.</p></div>
+    <div class="card">{% include svc-icon.html name="survey" %}<h3>Every report reviewed</h3><p>AI drafts weekly reports, bid comparisons and business cases. A senior project manager reviews each one before it goes out.</p></div>
   </div>
 </div></section>
 <section class="block night"><div class="wrap split">
   <div class="prose">
-    <div class="sechead"><p class="eyebrow">Why Double Alpha</p><h2>Two parties working as one</h2></div>
-    <p>Our name comes from two alphas linked together: client and adviser, owner and operator. We work inside your team, use your systems and report in your format.</p>
-    <p class="muted">We bring hands-on offshore drilling experience across reactivations, shipyard programmes, project controls and vendor management. Every engagement is led by a senior project manager.</p>
+    <div class="sechead"><p class="eyebrow">Why Double Alpha</p><h2>One team: yours and ours</h2></div>
+    <p>The name comes from two linked alphas: client and adviser. We work inside your team, use your systems and report in your format.</p>
+    <p class="muted">Every engagement is led by a senior project manager with hands-on experience in reactivations, shipyard programmes, project controls and vendor management. You deal with the person doing the work.</p>
     <p><a href="{{ '/about/' | relative_url }}">About the firm →</a></p>
   </div>
-  <div class="panel"><h3>What clients get</h3>{% assign wc = "One accountable senior lead|Weekly cost, schedule and risk reporting|Early warning on late materials and vendors|Decisions backed by numbers, not adjectives|Executive-ready reports and presentations" | split: "|" %}{% include ticks.html items=wc %}</div>
+  <div class="panel"><h3>What you get</h3>{% assign wc = "One accountable senior lead|Cost, schedule and risk reported every week|Early warning on late materials and vendors|Decisions backed by numbers|Reports ready for the executive team" | split: "|" %}{% include ticks.html items=wc %}</div>
 </div></section>
 <section class="block"><div class="wrap">
-  <div class="sechead"><p class="eyebrow">From the blog</p><h2>Latest insights</h2></div>
+  <div class="sechead"><p class="eyebrow">From the blog</p><h2>Field notes</h2></div>
   <div class="grid g2">{% for p in site.posts limit:4 %}{% include postcard.html p=p %}{% endfor %}</div>
 </div></section>
 {% include cta.html %}
